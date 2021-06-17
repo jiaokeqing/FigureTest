@@ -625,6 +625,9 @@ public class ZKFPDemo extends JFrame{
 		public static void main(String[] args) {
 //			new ZKFPDemo().launchFrame();
 			FigureUtil figureUtil=new FigureUtil();
-			figureUtil.openFigure();
+			figureUtil.open();
+			figureUtil.enroll();
+
+			figureUtil.identify();
 		}
 }
