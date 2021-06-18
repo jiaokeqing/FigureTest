@@ -1,23 +1,21 @@
-package com.figure;
-
 import com.zkteco.biometric.FingerprintSensorErrorCode;
 import com.zkteco.biometric.FingerprintSensorEx;
 
+import javax.imageio.ImageIO;
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import javax.swing.ButtonGroup;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JRadioButton;
-import javax.swing.JTextArea;
-
+/**
+ * ZKFinger Sdk Demo
+ * 适用于C/S架构
+ * @author jkq
+ * @description 设备型号：ZKFinger Live20R
+ * @createDate 2021.6.18
+ */
 public class ZKFPDemo extends JFrame{
 	JButton btnOpen = null;
 	JButton btnEnroll = null;
@@ -623,11 +621,11 @@ public class ZKFPDemo extends JFrame{
 		}
 		
 		public static void main(String[] args) {
-//			new ZKFPDemo().launchFrame();
-			FigureUtil figureUtil=new FigureUtil();
-			figureUtil.open();
-			figureUtil.enroll();
+			new ZKFPDemo().launchFrame();
+//			FigureUtil figureUtil=new FigureUtil();
+//			figureUtil.open();
+//			figureUtil.enroll();
 
-			figureUtil.identify();
+//			figureUtil.identify();
 		}
 }

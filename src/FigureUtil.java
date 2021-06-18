@@ -1,5 +1,3 @@
-package com.figure;
-
 import com.zkteco.biometric.FingerprintSensorErrorCode;
 import com.zkteco.biometric.FingerprintSensorEx;
 
